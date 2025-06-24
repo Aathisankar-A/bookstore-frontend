@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Booken</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Work+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="header" data-header role="banner">
+    <div class="header-top">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.svg" width="138" height="28" alt="booken home">
+        </a>
+
+        <div class="input-wrapper" role="search">
+          <input type="search" name="search" placeholder="Search our store" class="input-field" aria-label="Search books">
+          <button class="btn btn-primary" aria-label="Perform search">Search</button>
+        </div>
+
+        <div class="header-action">
+          <button class="header-action-btn" aria-label="View shopping cart" title="Cart">
+            <span class="span" aria-live="polite">0</span>
+            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="open menu" title="Open Menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="header-action-btn" aria-label="User account" title="User">
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom" data-navbar>
+      <div class="container">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li><a href="index.html" class="navbar-link">Home</a></li>
+            <li><a href="shop.html" class="navbar-link">Shop</a></li>
+            <li><a href="blog.html" class="navbar-link">Blog</a></li>
+            <li><a href="about.html" class="navbar-link">About Us</a></li>
+            <li><a href="contact.html" class="navbar-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section shop" aria-label="shop">
+      <div class="container">
+        <h1 class="h1 section-title">Our Books Collection</h1>
+
+        <div class="filter-list">
+          <button class="filter-btn active" data-filter-btn="all">All</button>
+          <button class="filter-btn" data-filter-btn="fiction">Fiction</button>
+          <button class="filter-btn" data-filter-btn="non-fiction">Non-Fiction</button>
+          <button class="filter-btn" data-filter-btn="children">Children</button>
+          <button class="filter-btn" data-filter-btn="mystery">Mystery</button>
+          <button class="filter-btn" data-filter-btn="romance">Romance</button>
+        </div>
+
+        <div class="grid-list">
+          <!-- Fiction Books -->
+          <div class="product-card" data-filter="fiction">
+            <figure class="card-banner">
+              <img src="./assets/images/book-1.png" alt="The Midnight Library" loading="lazy">
+              <div class="card-badge">New</div>
+              <div class="card-actions">
+                <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                  <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                  <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="quick view" title="Quick View">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h3">
+                <a href="#" class="card-title">The Midnight Library</a>
+              </h3>
+              <p class="author">by Matt Haig</p>
+              <p class="book-description">
+                Between life and death there is a library. When Nora finds herself in the Midnight Library, 
+                she has a chance to make things right.
+              </p>
+              <data class="card-price" value="24.99">$24.99</data>
+              <div class="rating-wrapper">
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star-half" aria-hidden="true"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <!-- Non-Fiction Books -->
+          <div class="product-card" data-filter="non-fiction">
+            <figure class="card-banner">
+              <img src="./assets/images/book-2.png" alt="Atomic Habits" loading="lazy">
+              <div class="card-actions">
+                <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                  <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                  <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="quick view" title="Quick View">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h3">
+                <a href="#" class="card-title">Atomic Habits</a>
+              </h3>
+              <p class="author">by James Clear</p>
+              <p class="book-description">
+                Transform your life with tiny changes that yield remarkable results. Learn how to build good habits 
+                and break bad ones.
+              </p>
+              <data class="card-price" value="29.99">$29.99</data>
+              <div class="rating-wrapper">
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <!-- Children's Books -->
+          <div class="product-card" data-filter="children">
+            <figure class="card-banner">
+              <img src="./assets/images/book-3.png" alt="The Gruffalo" loading="lazy">
+              <div class="card-actions">
+                <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                  <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                  <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="quick view" title="Quick View">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h3">
+                <a href="#" class="card-title">The Gruffalo</a>
+              </h3>
+              <p class="author">by Julia Donaldson</p>
+              <p class="book-description">
+                A mouse takes a walk through the deep dark wood, using his wit to avoid danger and outsmart 
+                the creatures he meets.
+              </p>
+              <data class="card-price" value="19.99">$19.99</data>
+              <div class="rating-wrapper">
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mystery Books -->
+          <div class="product-card" data-filter="mystery">
+            <figure class="card-banner">
+              <img src="./assets/images/book-4.png" alt="The Silent Patient" loading="lazy">
+              <div class="card-actions">
+                <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                  <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                  <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="quick view" title="Quick View">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h3">
+                <a href="#" class="card-title">The Silent Patient</a>
+              </h3>
+              <p class="author">by Alex Michaelides</p>
+              <p class="book-description">
+                A woman shoots her husband five times and then never speaks another word. A criminal psychotherapist 
+                is determined to unravel the mystery of her silence.
+              </p>
+              <data class="card-price" value="26.99">$26.99</data>
+              <div class="rating-wrapper">
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <!-- Romance Books -->
+          <div class="product-card" data-filter="romance">
+            <figure class="card-banner">
+              <img src="./assets/images/book-5.png" alt="The Love Hypothesis" loading="lazy">
+              <div class="card-badge">Trending</div>
+              <div class="card-actions">
+                <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                  <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                  <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="quick view" title="Quick View">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h3">
+                <a href="#" class="card-title">The Love Hypothesis</a>
+              </h3>
+              <p class="author">by Ali Hazelwood</p>
+              <p class="book-description">
+                A Ph.D. candidate fakes a relationship with a professor to convince her best friend she's dating. 
+                What could possibly go wrong?
+              </p>
+              <data class="card-price" value="23.99">$23.99</data>
+              <div class="rating-wrapper">
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star-half" aria-hidden="true"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <!-- More Non-Fiction Books -->
+          <div class="product-card" data-filter="non-fiction">
+            <figure class="card-banner">
+              <img src="./assets/images/book-6.png" alt="Think Again" loading="lazy">
+              <div class="card-actions">
+                <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                  <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                  <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="quick view" title="Quick View">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h3">
+                <a href="#" class="card-title">Think Again</a>
+              </h3>
+              <p class="author">by Adam Grant</p>
+              <p class="book-description">
+                Learn how to rethink and unlearn in a world of constant change. Discover the power of knowing what 
+                you don't know.
+              </p>
+              <data class="card-price" value="27.99">$27.99</data>
+              <div class="rating-wrapper">
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <!-- More Children's Books -->
+          <div class="product-card" data-filter="children">
+            <figure class="card-banner">
+              <img src="./assets/images/book-7.png" alt="Dragons Love Tacos" loading="lazy">
+              <div class="card-actions">
+                <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                  <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                  <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="quick view" title="Quick View">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h3">
+                <a href="#" class="card-title">Dragons Love Tacos</a>
+              </h3>
+              <p class="author">by Adam Rubin</p>
+              <p class="book-description">
+                Dragons love tacos. But be careful with the spicy salsa! This hilarious story is perfect for 
+                young readers and dragon enthusiasts.
+              </p>
+              <data class="card-price" value="18.99">$18.99</data>
+              <div class="rating-wrapper">
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <!-- More Fiction Books -->
+          <div class="product-card" data-filter="fiction">
+            <figure class="card-banner">
+              <img src="./assets/images/book-8.png" alt="Project Hail Mary" loading="lazy">
+              <div class="card-actions">
+                <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                  <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                  <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn" aria-label="quick view" title="Quick View">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h3">
+                <a href="#" class="card-title">Project Hail Mary</a>
+              </h3>
+              <p class="author">by Andy Weir</p>
+              <p class="book-description">
+                A lone astronaut must save humanity from extinction in this thrilling interstellar adventure 
+                from the author of The Martian.
+              </p>
+              <data class="card-price" value="28.99">$28.99</data>
+              <div class="rating-wrapper">
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star" aria-hidden="true"></ion-icon>
+                <ion-icon name="star-half" aria-hidden="true"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="book-details">
+          <!-- Book details will be loaded dynamically -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <!-- Copy footer from index.html -->
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/cart.js"></script>
+  <script src="./assets/js/search.js"></script>
+  <script src="./assets/js/mobile-nav.js"></script>
+  <script src="./assets/js/lazy-loading.js"></script>
+  <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/quick-view.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html> 

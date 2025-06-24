@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Booken</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Work+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <header class="header" data-header role="banner">
+    <!-- Copy header from index.html -->
+  </header>
+
+  <main>
+    <section class="section contact" aria-label="contact">
+      <div class="container">
+        <h2 class="h2 section-title">Contact Us</h2>
+        <p class="section-text">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+
+        <form id="contactForm" class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <div id="formSuccess" class="form-success" style="display: none;">
+          <h3>Thank you for your message!</h3>
+          <p>We'll get back to you as soon as possible.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Copy footer from index.html -->
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/cart.js"></script>
+  <script src="./assets/js/search.js"></script>
+  <script src="./assets/js/contact.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html> 
