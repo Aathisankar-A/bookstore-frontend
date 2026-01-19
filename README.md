@@ -17,6 +17,10 @@ Before you begin, ensure you have met the following requirements:
 
 To run locally, open the `index.html` file in your web browser.
 
+## Screenshots
+
+![Demo image](readme-images/demo-screeshot1.png)
+
 ### License
 
 This project is **free to use** and does not contains any license.
